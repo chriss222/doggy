@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 2rem;
+    background-color: rgb(122, 101, 122);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+select {
+    height: 1.5rem;
+    border-radius: 5px;
+    flex-basis: 10rem;
+}
+
+.dog-container {
+    display: flex;
+    justify-content: center;
+    height: 620px;
+    align-items: center;
+}
+
+p {
+    font-size: 3rem;
+    animation: spin 1s linear infinite;
+}
+
+.hideElement {
+    display: none;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
